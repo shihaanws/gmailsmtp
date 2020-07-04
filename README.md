@@ -3,5 +3,5 @@ Simple mail forwading backend using Django with gmail's smtp server.
 
 
 
-#DJANGO
+# DJANGO
 Install django
