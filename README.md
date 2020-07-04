@@ -1,2 +1,7 @@
 # gmailsmtp
-Simple mail forwading backend using gmail's smtp server.
+Simple mail forwading backend using Django with gmail's smtp server.
+
+
+
+#DJANGO
+Install django
