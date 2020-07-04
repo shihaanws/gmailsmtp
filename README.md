@@ -45,7 +45,7 @@ In ``settings.py``:
         ...
     ]   
     
-***While running the srever dont forget to check the less secure app access***
+***While running the server dont forget to check the less secure app access***
 
 
 
