@@ -7,7 +7,7 @@ Simple mail forwading backend using Django with gmail's smtp server.
 
 * Install Django web framework  &nbsp; &nbsp; : **$ pip install django**
 
-* Starting a django project &nbsp; &nbsp; &nbsp; &nbsp;      : **$ django-admin startproject projectname**
+* Starting a django project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;     : **$ django-admin startproject projectname**
 
 * To know your version of Django : **$ python -m django --version**
 
