@@ -15,9 +15,26 @@ Simple mail forwading backend using Django with gmail's smtp server.
 
 $ python manage.py runserver
 
-# Starting the django App
+# Starting the Django App
 
 $ python manage.py startapp appname
+
+
+In ``settings.py``:
+::
+
+    INSTALLED_APPS = [
+        ...
+        "sendemail", #add the app name here
+        ...
+    ]
+    
+In ``urls.py``:
+
+::
+    urlpatterns = [
+    path('',views.emailsending)  # set path for the view request
+]
 
 
 
