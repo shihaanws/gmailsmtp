@@ -29,12 +29,23 @@ In ``settings.py``:
         ...
     ]
     
-In ``urls.py``:
-
+    EMAIL_BACKEND= 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST='smtp.gmail.com'
+    EMAIL_USE_TLS=True
+    EMAIL_PORT=587
+    EMAIL_HOST_USER='fromemailaddress@gmail.com'  #type your from mail address here
+    EMAIL_HOST_PASSWORD='frompassword'           #type the password for the from mail address
+    
+ In ``urls.py``:
 ::
-    urlpatterns = [
-    path('',views.emailsending)  # set path for the view request
-]
+
+    INSTALLED_APPS = [
+        ...
+        "sendemail", #add the app name here
+        ...
+    ]   
+    
+***While running the srever dont forget to check the less secure app access***
 
 
 
