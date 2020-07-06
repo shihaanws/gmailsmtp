@@ -21,11 +21,12 @@ $ python manage.py startapp appname
 
 
 In ``settings.py``:
-::
+
+
 
     INSTALLED_APPS = [
         ...
-        "sendemail", #add the app name here
+        "sendemail",                              #add the app name here
         ...
     ]
     
@@ -34,16 +35,17 @@ In ``settings.py``:
     EMAIL_USE_TLS=True
     EMAIL_PORT=587
     EMAIL_HOST_USER='fromemailaddress@gmail.com'  #type your from mail address here
-    EMAIL_HOST_PASSWORD='frompassword'           #type the password for the from mail address
+    EMAIL_HOST_PASSWORD='frompassword'            #type the password for the from mail address
     
  In ``urls.py``:
-::
-    ...
-    from . import views
 
+    
+    
+    from . import views
+    
     urlpatterns = [
     
-        path('',views.emailsending)  # set path for the view request
+        path('',views.emailsending)               # set path for the view request
     ]   
     
 ***While running the server dont forget to turn on access for less secure apps***
