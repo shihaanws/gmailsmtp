@@ -38,14 +38,15 @@ In ``settings.py``:
     
  In ``urls.py``:
 ::
+    ...
+    from . import views
 
-    INSTALLED_APPS = [
-        ...
-        "sendemail", #add the app name here
-        ...
+    urlpatterns = [
+    
+        path('',views.emailsending)  # set path for the view request
     ]   
     
-***While running the server dont forget to check the less secure app access***
+***While running the server dont forget to turn on access for less secure apps***
 
 
 
